@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { map, Observable } from 'rxjs';
 import { postService } from '../services/post.services';
-import {Post} from '../models/post-model';
+import { Post } from '../models/post-model';
 
 
 @Component({
@@ -34,8 +34,8 @@ export class NewPostComponent implements OnInit {
       map(formValue => ({
         ...formValue,
         id: 0,
-        like: 0,
-        dislike: 0
+        likes: 0,
+        dislikes: 0
       }))
     );
   }

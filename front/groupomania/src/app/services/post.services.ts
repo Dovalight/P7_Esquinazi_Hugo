@@ -17,16 +17,15 @@ export class postService{
         return this.http.get<Post[]>('http://localhost:3000/groupomania');
       }
 
-      postById(postId: number, postType: 'Like' | 'Dislike'): void{
-       // const trigger = this.getTriggerById(triggerId);
-       // triggerType === 'triggerrred' ? trigger.trigger++ : trigger.trigger--;
+      postById(postId: number, postType: 'ikes' | 'dislikes'): void{
+       
       }
 
       getPostById(postId: number): Observable<Post>{
         return this.http.get<Post>(`http://localhost:3000/groupomania/${postId}`);
       }
 
-      addPost(formValue: {title: string, post: string, imageUrl?: string, like: number, dislike: number}): void {
+      addPost(formValue: {title: string, post: string, imageUrl?: string, likes: number, dislikes: number}): void {
         const post : Post = {
           ...formValue,
           likes: 0,

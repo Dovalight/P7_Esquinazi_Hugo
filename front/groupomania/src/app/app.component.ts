@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { filter, interval, map, Observable, tap } from 'rxjs';
 
 @Component({
@@ -6,6 +6,10 @@ import { filter, interval, map, Observable, tap } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'groupomania';
+
+  ngOnInit(): void{
+
+  }
 }

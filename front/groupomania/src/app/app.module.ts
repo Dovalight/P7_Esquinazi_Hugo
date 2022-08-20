@@ -12,6 +12,7 @@ import { NewPostComponent } from './new-post/new-post.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { GroupomaniaAppComponent } from './groupomania-app/groupomania-app.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { GroupomaniaAppComponent } from './groupomania-app/groupomania-app.compo
     SinglePostComponent,
     PostListComponent,
     GroupomaniaAppComponent,
+    HeaderComponent,
 
   ],
   imports: [

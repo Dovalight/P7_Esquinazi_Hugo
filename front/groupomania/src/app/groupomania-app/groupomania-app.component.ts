@@ -15,7 +15,7 @@ export class GroupomaniaAppComponent implements OnInit {
   constructor(private postService: postService) { }
 
   ngOnInit(): void {
-this.postes$ = this.postService.getAllPost();
+    this.postes$ = this.postService.getAllPost();
 
   }
 

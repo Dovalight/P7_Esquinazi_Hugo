@@ -1,5 +1,9 @@
 <div class="post-card">
     <h2> {{Post.title | titlecase}} </h2>
     <p> {{Post.post}} </p>
-    <button (click)="onComment()">voir les commentaires</button>
+    <div class="post-like">
+        <p>like: </p>
+        <p>dislike: </p>
+    </div>
+    <button (click)="onComment()">voir les commentaires</button> 
 </div>
