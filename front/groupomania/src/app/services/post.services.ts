@@ -25,7 +25,7 @@ export class postService{
         return this.http.get<Post>(`http://localhost:3000/groupomania/${postId}`);
       }
 
-      addPost(formValue: {title: string, post: string, imageUrl?: string, likes: number, dislikes: number}): void {
+      addPost(formValue: {title: string, post: string, imageUrl: string, likes: number, dislikes: number}): void {
         const post : Post = {
           ...formValue,
           likes: 0,

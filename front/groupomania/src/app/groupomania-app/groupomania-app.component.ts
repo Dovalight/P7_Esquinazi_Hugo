@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { postService } from '../services/post.services';
 import { Post } from '../models/post-model';
@@ -11,6 +11,7 @@ import { Post } from '../models/post-model';
 export class GroupomaniaAppComponent implements OnInit {
 
   postes$!: Observable<Post[]>;
+  @Input() post: Post = new Post();
 
   constructor(private postService: postService) { }
 

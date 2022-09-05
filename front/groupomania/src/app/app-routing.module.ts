@@ -6,7 +6,7 @@ import { NewPostComponent } from './new-post/new-post.component';
 import { PostListComponent } from './post-list/post-list.component';
 
 const routes: Routes = [
-  {path: 'groupomania/login', component: GroupomaniaConnexionComponent},
+  {path: 'signup', component: GroupomaniaConnexionComponent},
   {path: '', component: GroupomaniaAppComponent},
   {path: 'groupomania/:id', component: PostListComponent},
   {path: 'new', component: NewPostComponent}

@@ -1,10 +1,13 @@
-<div class="langing-block">
-    <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)" >
+<div class="loging-block">
+  <img src="../../../../../logo/icon-left-font-monochrome-white.svg" alt="logo Groupomania" />
+   
+  <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)" >
         <label for="emailInput">entrez email</label>
         <input type="email" id="emailInput" [(ngModel)]="userEmail" name="userEmail" />
         <label for="passwordInput">mot de passe</label>
         <input type="password" id="passwordInput" [(ngModel)]="userPassword" name="userPassword" />
         <button type="submit">Connexion</button>
       </form>
+ 
 </div>
 

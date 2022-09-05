@@ -12,6 +12,8 @@ import { Post } from '../models/post-model';
 export class SinglePostComponent implements OnInit {
 
   Post$!: Observable<Post>;
+  postPreview$!: Post;
+  post: Post = new Post();
 
   constructor(private postService: postService,
     private route: ActivatedRoute) { }

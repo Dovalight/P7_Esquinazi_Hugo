@@ -1,8 +1,8 @@
-<div class="post-card" *ngIf="postPreview$ | async as Post">
-    <h2> {{Post.title | titlecase}} </h2>
+<div class="post-card">
+    <h2> {{post.title | titlecase}} </h2>
     <a routerLink="/groupomania">Groupomania</a>
-    <p> {{Post.post}} </p>
-    <img *ngIf="Post.imageUrl" [src]="Post.imageUrl" [alt]="Post.title" />
+    <p> {{post.post}} </p>
+    <img *ngIf="post.imageUrl" [src]="post.imageUrl" [alt]="post.title" />
     <div class="post-like">
         <p>like: </p>
         <p>dislike: </p>

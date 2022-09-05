@@ -13,6 +13,7 @@ import { Post } from '../models/post-model';
 })
 export class NewPostComponent implements OnInit {
 
+  Post!: Post;
   postForm!: FormGroup;
   postPreview$!: Observable<Post>;
   urlRegex!: RegExp;

@@ -13,6 +13,8 @@ import { SinglePostComponent } from './single-post/single-post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { GroupomaniaAppComponent } from './groupomania-app/groupomania-app.component';
 import { HeaderComponent } from './header/header.component';
+import { SearchUserComponent } from './search-user/search-user.component';
+import { httpInterceptorProviders } from './interceptors';
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { HeaderComponent } from './header/header.component';
     PostListComponent,
     GroupomaniaAppComponent,
     HeaderComponent,
+    SearchUserComponent,
 
   ],
   imports: [
@@ -34,7 +37,8 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule
   ],
   providers: [
-    {provide: LOCALE_ID, useValue:'fr-FR'}
+    {provide: LOCALE_ID, useValue:'fr-FR'},
+    httpInterceptorProviders
   ],
   bootstrap: [AppComponent]
 })
