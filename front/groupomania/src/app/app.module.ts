@@ -15,6 +15,7 @@ import { GroupomaniaAppComponent } from './groupomania-app/groupomania-app.compo
 import { HeaderComponent } from './header/header.component';
 import { SearchUserComponent } from './search-user/search-user.component';
 import { httpInterceptorProviders } from './interceptors';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { httpInterceptorProviders } from './interceptors';
     GroupomaniaAppComponent,
     HeaderComponent,
     SearchUserComponent,
+    SignupComponent,
 
   ],
   imports: [

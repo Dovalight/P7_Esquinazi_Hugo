@@ -43,7 +43,6 @@ export class NewPostComponent implements OnInit {
 
   onSubmitForm(): void{
     this.postService.addPost(this.postForm.value);
-    this.router.navigateByUrl('/groupomania')
+    this.router.navigateByUrl('')
   }
-
 }

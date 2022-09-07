@@ -4,12 +4,14 @@ import { GroupomaniaAppComponent } from './groupomania-app/groupomania-app.compo
 import { GroupomaniaConnexionComponent } from './groupomania-connexion/groupomania-connexion.component';
 import { NewPostComponent } from './new-post/new-post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
-  {path: 'signup', component: GroupomaniaConnexionComponent},
+  {path: '/login', component: GroupomaniaConnexionComponent},
+  {path: '/signup', component: SignupComponent},
   {path: '', component: GroupomaniaAppComponent},
-  {path: 'groupomania/:id', component: PostListComponent},
-  {path: 'new', component: NewPostComponent}
+  {path: '/:id', component: PostListComponent},
+  {path: '/new', component: NewPostComponent}
 ];
 
 @NgModule({

@@ -13,4 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onNewPost():void {
+    this.router.navigateByUrl('new');
+  }
+
 }

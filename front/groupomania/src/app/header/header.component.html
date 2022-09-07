@@ -1,8 +1,9 @@
 <header>
-    <img src="../../../../../logo/icon-left-font-monochrome-white.svg" alt="logo Groupomania" />
+    <!--<img src="../../../../../logo/icon-left-font-monochrome-white.svg" alt="logo Groupomania" />-->
     <nav>
         <a routerLink="signup" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Sign up</a>
         <a routerLink="login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Login</a>
         <a>Log out</a>
     </nav>
+    <button (click)="onNewPost()">nouveau post</button>
 </header>
